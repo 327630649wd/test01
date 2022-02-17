@@ -1,31 +1,24 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
 .project
 .settings
-.springBeans
-.sts4-cache
+*~
+*.diff
+*.patch
+/*.html
+.DS_Store
+.bower.json
+.sizecache.json
+yarn.lock
+package-lock.json
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+npm-debug.log*
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
+# Ignore everything in dist folder except for eslint config
+/dist/*
+!/dist/.eslintrc.json
 
-### VS Code ###
-.vscode/
+/amd
+/external
+/node_modules
+
+/test/data/core/jquery-iterability-transpiled.js
+/test/data/qunit-fixture.js
